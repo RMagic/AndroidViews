@@ -1,6 +1,5 @@
 package com.rm.androidViews;
 
-import android.R.bool;
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -34,8 +33,10 @@ public class AndroidViewsActivity extends Activity {
 			showAutoComplete();
 			break;
 		case 1:
+			showButton();
 			break;
 		case 2:
+			showCheckBox();
 			break;
 		case 3:
 			break;
@@ -51,6 +52,16 @@ public class AndroidViewsActivity extends Activity {
     
     public void showAutoComplete(){
     	Intent autocomplete = new Intent(this, AutoComplete.class);
+    	startActivity(autocomplete);
+    }
+    
+    public void showButton(){
+    	Intent autocomplete = new Intent(this, TestButton.class);
+    	startActivity(autocomplete);
+    }
+    
+    public void showCheckBox(){
+    	Intent autocomplete = new Intent(this, TestCheckBox.class);
     	startActivity(autocomplete);
     }
 }

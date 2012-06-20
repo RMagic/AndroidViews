@@ -27,7 +27,15 @@
         </activity>
         <activity
             android:name=".TestButton"
-            android:label="@string/TestButton">
+            android:label="TestButton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestCheckBox"
+            android:label="TestCheckBox">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
